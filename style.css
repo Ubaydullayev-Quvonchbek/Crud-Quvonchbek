@@ -3,6 +3,18 @@
     padding: 0;
 }
 
+p,
+button {
+    padding: 0;
+    margin: 0;
+}
+
+button{
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+}
+
 body {
     background: rgb(73, 15, 114);
 }
@@ -21,6 +33,7 @@ form {
 
 .form-control {
     border: 2px solid #198754;
+    border-right: 0;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     box-shadow: 0 0 0 transparent;
@@ -29,6 +42,7 @@ form {
 .form-control:focus,
 .form-control:active {
     border: 2px solid #157347;
+    border-right: 0;
     border-top-right-radius: 0;
     border-bottom-right-radius: 0;
     box-shadow: 0 0 0 transparent;
@@ -51,9 +65,18 @@ form {
     margin-top: 20px;
 }
 
-p,
-button {
-    margin: 0;
+.btn-div {
+    padding-top: 3.5px;
+    padding-bottom: 3.5px;
+    border: 2px solid #198754;
+    border-left: 0px solid transparent;
+    padding-left: 3px;
+    padding-right: 3px;
+    display: none;
+}
+
+.btn-primary {
+    padding: 2px;
 }
 
 @media (max-width: 575px) {
